@@ -33,13 +33,15 @@
             gap: 20px;
         }
         .screenshot {
-            /* Убраны белые карточки и тени */
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         .screenshot img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 0;
         }
     </style>
 </head>
@@ -48,6 +50,26 @@
     
     <h1>🎮 Game Screenshots</h1>
     
-   
+    <div class="gallery">
+        <div class="screenshot">
+            <img src="images/screenshot1.jpg" alt="Screenshot 1">
+        </div>
+        
+        <div class="screenshot">
+            <img src="images/screenshot2.jpg" alt="Screenshot 2">
+        </div>
+        
+        <div class="screenshot">
+            <img src="images/screenshot3.jpg" alt="Screenshot 3">
+        </div>
+        
+        <div class="screenshot">
+            <img src="images/screenshot4.jpg" alt="Screenshot 4">
+        </div>
+        
+        <div class="screenshot">
+            <img src="images/screenshot5.jpg" alt="Screenshot 5">
+        </div>
+    </div>
 </body>
 </html>

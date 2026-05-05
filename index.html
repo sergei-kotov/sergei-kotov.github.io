@@ -16,6 +16,8 @@
         .action-buttons {
             margin: 30px 0;
             text-align: center;
+            display: flex;
+            justify-content: center; /* Центрирование единственной кнопки */
         }
         .button {
             display: inline-block;
@@ -36,15 +38,6 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
         }
-        .button-secondary {
-            background: white;
-            color: #667eea;
-            border: 2px solid #667eea;
-        }
-        .button-secondary:hover {
-            background: #667eea;
-            color: white;
-        }
     </style>
 </head>
 <body>
@@ -56,8 +49,7 @@
         
         <!-- Action Buttons -->
         <div class="action-buttons">
-            <a href="screenshots.html" class="button button-primary">🎮 Game Screenshots</a>
-            <a href="https://play.google.com/console" target="_blank" class="button button-secondary">📱 Google Play Console</a>
+            <a href="screenshots.html" class="button button-primary"> Game Screenshots</a>
         </div>
         
         <hr class="divider">

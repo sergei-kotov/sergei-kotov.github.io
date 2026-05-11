@@ -11,50 +11,40 @@
             margin: 0;
             padding: 20px;
             line-height: 1.6;
+            color: #333;
         }
         .container {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 40px;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
         h1 {
-            color: #333;
+            color: #1a1a1a;
             border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            font-size: 28px;
         }
         h2 {
             color: #667eea;
-            margin-top: 30px;
+            margin-top: 35px;
             margin-bottom: 15px;
+            font-size: 22px;
         }
         h3 {
             color: #764ba2;
-            margin-top: 20px;
+            margin-top: 25px;
             margin-bottom: 10px;
+            font-size: 18px;
         }
-        p {
-            color: #555;
-            margin-bottom: 15px;
-        }
-        ul {
-            color: #555;
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        p { margin-bottom: 15px; }
+        ul, ol { margin-bottom: 15px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
         .back-button {
             display: inline-block;
             margin-bottom: 20px;
@@ -64,50 +54,38 @@
             text-decoration: none;
             border-radius: 6px;
             transition: transform 0.2s;
+            font-weight: 500;
         }
-        .back-button:hover {
-            transform: translateY(-2px);
-            text-decoration: none;
-        }
+        .back-button:hover { transform: translateY(-2px); text-decoration: none; }
         .last-updated {
             background-color: #f0f0f0;
             padding: 10px 15px;
             border-radius: 4px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-style: italic;
-            color: #666;
+            color: #555;
         }
         .badge {
             display: inline-block;
             background-color: #28a745;
             color: white;
-            padding: 4px 10px;
+            padding: 5px 12px;
             border-radius: 20px;
             font-size: 14px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .toc {
             background-color: #f8f9fa;
             padding: 20px;
             border-radius: 6px;
             margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
         }
-        .toc h2 {
-            margin-top: 0;
-            color: #333;
-        }
-        .toc ul {
-            margin: 0;
-            list-style: none;
-            padding: 0;
-        }
-        .toc li {
-            margin-bottom: 5px;
-        }
-        .toc a {
-            color: #667eea;
-        }
+        .toc h2 { margin-top: 0; color: #333; font-size: 20px; }
+        .toc ul { margin: 0; list-style: none; padding: 0; }
+        .toc li { margin-bottom: 6px; }
+        .toc a { color: #667eea; font-weight: 500; }
         .note-box {
             background-color: #e8f4f8;
             border-left: 4px solid #667eea;
@@ -126,18 +104,31 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            font-size: 15px;
         }
         th, td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: left;
+            vertical-align: top;
         }
         th {
             background-color: #667eea;
             color: white;
+            font-weight: 600;
         }
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
+        tr:nth-child(even) { background-color: #f8f9fa; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            table { display: block; overflow-x: auto; white-space: nowrap; }
         }
     </style>
 </head>
@@ -149,25 +140,25 @@
         
         <h1>Privacy Policy for Sail & Fire: Caribbean</h1>
         
-        <div class="last-updated">
-            Last updated: May 12, 2026
-        </div>
+        <div class="last-updated">Last updated: May 12, 2026</div>
 
         <div class="toc">
             <h2>Table of Contents</h2>
             <ul>
-                <li><a href="#section1">1. Information We Collect</a></li>
-                <li><a href="#section2">2. How We Use Your Information</a></li>
-                <li><a href="#section3">3. Disclosure of Your Information</a></li>
-                <li><a href="#section4">4. Your Choices and Rights</a></li>
-                <li><a href="#section5">5. Data Security</a></li>
-                <li><a href="#section6">6. Data Retention</a></li>
-                <li><a href="#section7">7. Children's Privacy</a></li>
-                <li><a href="#section8">8. International Data Transfers</a></li>
-                <li><a href="#section9">9. Changes to This Privacy Policy</a></li>
-                <li><a href="#section10">10. Contact Us</a></li>
-                <li><a href="#section11">11. Notice to California Residents</a></li>
+                <li><a href="#section1">1. Scope & Applicability</a></li>
+                <li><a href="#section2">2. Information We Collect</a></li>
+                <li><a href="#section3">3. Why We Collect Your Information</a></li>
+                <li><a href="#section4">4. Disclosure of Your Information</a></li>
+                <li><a href="#section5">5. Your Choices</a></li>
+                <li><a href="#section6">6. Your Privacy Rights</a></li>
+                <li><a href="#section7">7. Security</a></li>
+                <li><a href="#section8">8. Transfers of Your Information</a></li>
+                <li><a href="#section9">9. Retention</a></li>
+                <li><a href="#section10">10. Children</a></li>
+                <li><a href="#section11">11. Notice to United States Residents</a></li>
                 <li><a href="#section12">12. Notice to EEA/UK/Switzerland Residents</a></li>
+                <li><a href="#section13">13. Changes to This Policy</a></li>
+                <li><a href="#section14">14. Contact Us</a></li>
             </ul>
         </div>
 
@@ -177,248 +168,185 @@
             <strong>📌 Key points about this Game:</strong><br>
             • The Game works primarily offline — internet is only needed for in-app purchases and analytics.<br>
             • Your game progress is saved locally on your device — there is <strong>no cloud save</strong>.<br>
-            • When you download the Game from Google Play, it is automatically linked to your Google Play account via <strong>Google Play Games Services</strong> (GPGS). This allows us to process purchases and identify you for anti-fraud purposes.<br>
-            • We do <strong>not</strong> receive your email address, name, or profile picture from Google.
+            • When you launch the Game, it automatically links to your Google Play account via <strong>Google Play Games Services</strong> (GPGS). This provides a unique <strong>Game Player ID</strong> for purchase validation and anti-fraud. We do <strong>not</strong> receive your email, name, or profile picture.<br>
+            • Data collection does <strong>not</strong> start on install. Firebase Analytics initializes only after you reach the main menu or perform your first in-game action.
         </div>
 
-        <p>By downloading, accessing, or playing the Game, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue use of the Game.</p>
+        <p>By downloading, accessing, or playing the Game, you acknowledge that we will process your information in accordance with this Privacy Policy. If you do not agree, please discontinue use of the Game.</p>
 
-        <h2 id="section1">1. Information We Collect</h2>
+        <h2 id="section1">1. Scope & Applicability</h2>
+        <p>This Privacy Policy applies to all information collected when you use Sail & Fire: Caribbean on mobile devices distributed via Google Play. It does not address the privacy practices of third-party platforms (e.g., Google Play Store, Google Play Games) beyond the data they share directly with us for Game functionality.</p>
 
-        <p>We collect only the minimum information necessary to provide and improve the Game:</p>
+        <h2 id="section2">2. Information We Collect</h2>
+        <p>We collect only the minimum information necessary to operate the Game, validate purchases, and ensure stability.</p>
 
-        <h3>1.1 Information from Google Play Games Services (GPGS)</h3>
-        <p>The Game integrates <strong>Google Play Games Services</strong> for user identification and in-app purchases. When you launch the Game for the first time, Google Play automatically provides us with:</p>
+        <h3>2.1 When Data Collection Begins</h3>
+        <div class="note-box">
+            <strong>️ Timing of Collection:</strong><br>
+            • The Game does <strong>not</strong> collect or transmit any data immediately upon installation or initial launch.<br>
+            • <strong>Firebase Analytics & Crashlytics</strong> initialize only after you reach the main menu or interact with the Game.<br>
+            • <strong>Google Play Billing</strong> activates only when you open the in-game store or attempt a purchase.<br>
+            • You can play fully offline without triggering any data collection by disabling internet access before launching.
+        </div>
+
+        <h3>2.2 Information from Google Play Games Services (GPGS)</h3>
+        <p>Upon first connection, GPGS automatically provides:</p>
         <ul>
-            <li><strong>Game Player ID</strong> — a unique, anonymous identifier specific to this Game. It does <strong>not</strong> contain your name, email address, or any personal information. This ID is generated automatically by Google Play Games Services.</li>
-            <li><strong>Purchase tokens</strong> — transaction identifiers for each in-app purchase you make, used to validate receipts.</li>
-        </ul>
-        <p><strong>Note for EU users:</strong> While the Game Player ID is pseudonymized and cannot directly identify you, it may be considered personal data under GDPR when combined with other technical information. We process it solely for purchase validation and fraud prevention, based on our legitimate interest (GDPR Art. 6(1)(f)).</p>
-
-        <h3>1.2 Automatic Linking to Google Play Account</h3>
-        <ul>
-            <li>When you download the Game from Google Play, it is automatically linked to your Google Play account through Google Play Games Services. This is required for in-app purchases to function properly.</li>
-            <li>No explicit "sign-in" action is required from you — the linking happens seamlessly and automatically when you launch the Game.</li>
-            <li>This automatic linking does <strong>not</strong> give us access to your Google account credentials, email address, contacts, or any personal data beyond the Game Player ID described above.</li>
-        </ul>
-
-        <h3>1.3 Information Collected Automatically (Anonymous)</h3>
-        <ul>
-            <li><strong>Device and Technical Data:</strong> Device model, operating system version, language settings, crash logs, and performance data.</li>
-            <li><strong>Usage Analytics (Firebase):</strong> We use <strong>Firebase Analytics</strong> (by Google) to collect aggregated, anonymous data about gameplay (e.g., session duration, levels completed, feature usage). This data <strong>cannot</strong> be used to identify you personally — it only helps us understand how players interact with the Game so we can fix bugs and improve design.</li>
+            <li><strong>Game Player ID:</strong> A unique, pseudonymous identifier specific to this Game. It contains no email, name, or personal identifiers.</li>
+            <li><strong>Purchase Tokens:</strong> Transaction receipts for in-app purchases, used solely for validation.</li>
         </ul>
 
-        <h3>1.4 Purchase Information (Google Play Billing)</h3>
+        <h3>2.3 Automatically Collected Information</h3>
         <ul>
-            <li>All in-app purchases are processed securely by <strong>Google Play Billing</strong>. We do <strong>not</strong> collect or store your payment card details, billing address, or any sensitive financial information. We only receive a transaction confirmation and purchase token from Google.</li>
+            <li><strong>Device & Technical Data:</strong> Device model, OS version, language settings, crash logs, and performance metrics.</li>
+            <li><strong>Usage Analytics (Firebase):</strong> Aggregated, non-personally identifiable gameplay data (session duration, levels completed, feature usage) to improve stability and design.</li>
         </ul>
 
-        <h3>1.5 Information You Provide Directly</h3>
+        <h3>2.4 Information You Voluntarily Provide</h3>
         <ul>
-            <li><strong>Support Communications:</strong> If you contact us for support via email, we will collect the information you voluntarily provide (e.g., description of the issue, screenshots, your email address for replies).</li>
+            <li><strong>Support Communications:</strong> If you email us, we collect your email address and the content of your message to provide assistance.</li>
         </ul>
 
-        <h3>1.6 What We Do NOT Collect</h3>
+        <h3>2.5 What We Do NOT Collect</h3>
         <ul>
-            <li>❌ No email addresses, real names, or profile pictures (we do not receive these from Google)</li>
-            <li>❌ No separate login or password — the Game uses automatic GPGS integration</li>
-            <li>❌ No cloud save synchronization — all progress is stored locally on your device</li>
-            <li>❌ No location data (GPS or IP-based tracking)</li>
-            <li>❌ No contacts, photos, or files from your device</li>
-            <li>❌ No biometric data</li>
-            <li>❌ No advertising ID or behavioral profiling for ads (the Game has no third-party ads)</li>
+            <li>❌ Email addresses, real names, or profile pictures from Google</li>
+            <li>❌ Cloud save data or cross-device synchronization</li>
+            <li>❌ Precise location data (GPS) or IP-based tracking</li>
+            <li>❌ Contacts, photos, or device files</li>
+            <li>❌ Advertising identifiers for targeted ads (the Game contains no third-party ads)</li>
+            <li>❌ Biometric or sensitive personal data</li>
         </ul>
 
-        <h2 id="section2">2. How We Use Your Information</h2>
-
-        <p>We use the collected information solely for the following purposes:</p>
+        <h2 id="section3">3. Why We Collect Your Information</h2>
+        <p>We process your information solely for the following purposes:</p>
         <ul>
-            <li>To associate in-app purchases with your Google Play account (so purchases are validated and fraud is prevented).</li>
-            <li><strong>Important note about cross-device purchases:</strong> Because the Game does <strong>not</strong> use cloud saves, purchases made on one device cannot be automatically restored on another device. Each device maintains its own local game state.</li>
-            <li>To analyze Game performance, detect crashes, and improve stability (via Firebase Crashlytics and Analytics).</li>
-            <li>To respond to your support requests and provide customer service.</li>
-            <li>To comply with legal obligations and enforce our Terms of Service.</li>
-            <li>To prevent fraud and ensure the security of the Game.</li>
+            <li><strong>Operate the Game:</strong> Validate purchases, prevent fraud, and ensure core functionality.</li>
+            <li><strong>Analytics & Stability:</strong> Analyze crash reports and usage patterns to fix bugs and improve performance.</li>
+            <li><strong>Customer Support:</strong> Respond to your inquiries and resolve technical issues.</li>
+            <li><strong>Legal Compliance:</strong> Maintain tax records for purchases and comply with applicable laws.</li>
         </ul>
 
-        <h2 id="section3">3. Disclosure of Your Information</h2>
-
-        <p>We do not sell your personal information. We may share your data only in the following circumstances:</p>
-
-        <h3>3.1 No Sale of Personal Information</h3>
-        <p>We do not sell, rent, or trade your personal information to third parties for monetary or other valuable consideration. This includes users in California and other jurisdictions with "sale" definitions under privacy laws.</p>
-
-        <h3>3.2 Service Providers</h3>
-        <p>Trusted third parties who assist us in operating the Game under strict confidentiality agreements:</p>
+        <h2 id="section4">4. Disclosure of Your Information</h2>
+        <p>We do not sell, rent, or trade your personal information. We may share data only in these circumstances:</p>
         <ul>
-            <li><strong>Google (Firebase & Play Games Services):</strong> For analytics, crash reporting, and purchase validation. Google's privacy policy applies: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-            <li><strong>Google Play Billing:</strong> For processing in-app purchases. Privacy policy: <a href="https://payments.google.com">https://payments.google.com</a></li>
+            <li><strong>Service Providers:</strong> Google (Firebase, Play Games Services, Play Billing) under strict confidentiality and data processing agreements.</li>
+            <li><strong>Legal Requirements:</strong> If required by law, court order, or to protect our rights, safety, or integrity of the Game.</li>
+            <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, subject to confidentiality obligations.</li>
         </ul>
 
-        <h3>3.3 Legal Requirements</h3>
-        <p>If required by law, regulation, legal process, or governmental request, or to protect the rights, property, or safety of ourselves, our users, or the public.</p>
-
-        <h3>3.4 Business Transfers</h3>
-        <p>In connection with a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction. We will notify you of any such change and ensure your data remains protected.</p>
-
-        <h3>3.5 Notice to California Residents (CCPA/CPRA)</h3>
-        <p>If you are a California resident, you have the right to:</p>
+        <h2 id="section5">5. Your Choices</h2>
         <ul>
-            <li>Request disclosure of the categories and specific pieces of personal information we have collected about you;</li>
-            <li>Request deletion of your personal information (subject to certain exceptions);</li>
-            <li>Opt-out of the "sale" or "sharing" of personal information for targeted advertising.</li>
-        </ul>
-        <p><strong>Important:</strong> We do not sell or share your personal information as defined by CCPA. The limited technical data we collect via Firebase is not used for cross-contextual behavioral advertising.</p>
-        <p>To exercise your rights, contact us at <strong>sk374962610@gmail.com</strong> with the subject line "CCPA Request".</p>
-
-        <p>All third parties are required to handle your information in accordance with this Privacy Policy and applicable data protection laws.</p>
-
-        <h2 id="section4">4. Your Choices and Rights</h2>
-
-        <p>Depending on your location, you may have the following rights regarding your personal information:</p>
-
-        <ul>
-            <li><strong>Access & Correction:</strong> Request a copy of your data or ask us to correct inaccurate information.</li>
-            <li><strong>Deletion of Game Data:</strong> Request deletion of any personal data we may have stored (e.g., support email correspondence).</li>
-            <li><strong>Opt-out of Analytics:</strong> You can limit Firebase data collection by turning off internet access for the Game in your device settings (some features may be unavailable).</li>
-            <li><strong>Marketing Communications:</strong> The Game does not send promotional emails or push notifications.</li>
+            <li><strong>Opt-out of Analytics:</strong> Disable internet access for the Game in device settings. Offline play remains fully functional.</li>
+            <li><strong>Manage GPGS Linking:</strong> Google Play Games app → Settings → Toggle off "Automatically sign in to supported games". Note: This may disable purchase validation.</li>
+            <li><strong>Delete Local Progress:</strong> Uninstall the Game or go to Settings → Apps → Sail & Fire: Caribbean → Storage → Clear Data.</li>
         </ul>
 
-        <h3>4.1 Deleting Your Data / Removing Google Play Association</h3>
-        <p>Because the Game uses <strong>Google Play Games Services</strong> for automatic identification (not a separate login system), there is no traditional "account" to delete. However:</p>
-
-        <p><strong>To remove the Game's access to your Google Play Games profile:</strong><br>
-        Open the Google Play Games app on your device → Settings → Turn off "Automatically sign in to supported games". Note that this will prevent future purchases and may cause the Game to lose purchase validation ability.</p>
-
-        <p><strong>To delete your local game progress:</strong><br>
-        Your game progress is stored only on your device. To delete it:<br>
-        • Uninstall the Game, OR<br>
-        • Go to device Settings → Apps → Sail & Fire: Caribbean → Storage → Clear Data</p>
-
-        <p><strong>To request deletion of any stored support data (e.g., email correspondence):</strong><br>
-        Contact us at <strong>sk374962610@gmail.com</strong>. We will delete any records associated with your request within 30 days.</p>
-
-        <p><strong>To view or delete your Google Play purchase history:</strong><br>
-        Purchase receipts are stored by Google, not by us. You can manage your Google Play purchase history at <a href="https://play.google.com/store/account">play.google.com/store/account</a>.</p>
-
-        <p>To exercise any of these rights, please contact us at <strong>sk374962610@gmail.com</strong>. We will respond within the timeframe required by applicable law (typically 30 days).</p>
-
-        <h2 id="section5">5. Data Security</h2>
-
-        <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, or destruction. Since we do not store personal data on our servers (except support correspondence which is kept in email), the risk of data breach is minimal. However, no method of electronic transmission or storage is 100% secure.</p>
-
-        <h2 id="section6">6. Data Retention</h2>
-
-        <p>We retain your personal information only as long as necessary to:</p>
+        <h2 id="section6">6. Your Privacy Rights</h2>
+        <p>Depending on your jurisdiction, you may have the right to:</p>
         <ul>
-            <li>Provide and maintain the Game;</li>
-            <li>Comply with legal obligations (e.g., tax records for purchases);</li>
-            <li>Resolve disputes; or</li>
-            <li>Enforce our agreements.</li>
+            <li>Access, correct, or delete your personal information</li>
+            <li>Restrict or object to processing</li>
+            <li>Data portability (where applicable)</li>
+        </ul>
+        <p>To exercise these rights, contact us at <strong>sk374962610@gmail.com</strong> with the subject line "Privacy Rights Request". We may request verification information to confirm your identity before processing. We will respond within the timeframe required by applicable law.</p>
+
+        <h2 id="section7">7. Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your information. Since we do not store personal data on external servers (support emails are stored securely in our email provider, and analytics are handled by Google's encrypted infrastructure), the risk of breach is minimal. However, no system is 100% secure. We encourage you to safeguard your device and Google account credentials.</p>
+
+        <h2 id="section8">8. Transfers of Your Information</h2>
+        <p>As a globally distributed game, your information may be processed in countries outside your residence. Firebase and Google Play services operate on secure global infrastructure. For transfers from the EEA/UK/Switzerland, we rely on Google's compliance with the EU-US Data Privacy Framework and Standard Contractual Clauses (SCCs) to ensure adequate protection.</p>
+
+        <h2 id="section9">9. Retention</h2>
+        <p>We retain information only as long as necessary:</p>
+        <ul>
+            <li><strong>Local Game Progress:</strong> Stored on your device until uninstall or manual data clearance.</li>
+            <li><strong>Firebase Analytics:</strong> Retained by Google per their policy (typically 14 months for raw data, then aggregated).</li>
+            <li><strong>Support Emails:</strong> Retained for up to 12 months after issue resolution, then securely deleted.</li>
+            <li><strong>Purchase Tokens:</strong> Retained up to 3 years for fraud prevention and tax compliance.</li>
         </ul>
 
-        <p><strong>Local game progress:</strong> Stored solely on your device until you uninstall the Game or clear app data.</p>
-        <p><strong>Anonymous Firebase analytics data:</strong> Retained by Google according to their policies (typically 14 months for raw data, then aggregated).</p>
-        <p><strong>Support correspondence (emails):</strong> Retained for up to 12 months after resolving your issue, then deleted.</p>
-        <p><strong>Purchase tokens from Google:</strong> Retained only as long as needed for fraud prevention and tax compliance (up to 3 years).</p>
-
-        <h2 id="section7">7. Children's Privacy</h2>
-
+        <h2 id="section10">10. Children</h2>
         <div class="warning-box">
-            <strong>⚠️ Age Restriction:</strong> The Game is not intended for children under the age of <strong>sixteen (16)</strong>.
+            <strong>️ Age Restriction:</strong> The Game is not intended for children under the age of <strong>sixteen (16)</strong>.
         </div>
+        <p>We do not knowingly collect personal information from children under 16. Because GPGS provides only a pseudonymous Player ID, we cannot verify user age. If you believe a child under 16 has provided personal data (e.g., via support email), contact us immediately at <strong>sk374962610@gmail.com</strong>, and we will take steps to delete it.</p>
 
-        <p>We do not knowingly collect personal information from children under the age of <strong>sixteen (16)</strong>. Because our automatic GPGS integration provides only an anonymous Game Player ID (no email, no name), we have no way of identifying a user's age.</p>
-
-        <p>If you are under the age of <strong>16</strong>, please do not provide us with information of any kind whatsoever. We encourage parents and guardians to spend time with their children online and to be familiar with the games they play.</p>
-
-        <p>If you believe a child under the age of <strong>16</strong> has provided us with personal data (e.g., via support email), please contact us immediately at <strong>sk374962610@gmail.com</strong>, and we will take steps to delete such information.</p>
-
-        <h2 id="section8">8. International Data Transfers</h2>
-
-        <p>As a mobile game distributed globally via Google Play, your information may be processed in countries outside your own, including jurisdictions with different data protection standards. Firebase services (Google) may process anonymous crash and analytics data on servers located in various countries. This data contains no personal identifiers. Google complies with international data transfer frameworks such as the EU-US Data Privacy Framework and provides standard contractual clauses (SCCs) for GDPR compliance.</p>
-
-        <h2 id="section9">9. Changes to This Privacy Policy</h2>
-
-        <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page will reflect any changes. For material changes, we will provide notice via the Game (if internet is available) or by updating this page. Your continued use of the Game after such changes constitutes acceptance of the updated policy.</p>
-
-        <h2 id="section10">10. Contact Us</h2>
-
-        <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact:</p>
-
-        <p>
-            📧 <strong>Email:</strong> sk374962610@gmail.com<br>
-            🏢 <strong>Developer:</strong> Kotov Sergei, IE<br>
-            📍 <strong>Location:</strong> Yerevan, Armenia
-        </p>
-
-        <h2 id="section11">11. Notice to California Residents</h2>
-
-        <p>If you are a California resident, the California Consumer Privacy Act (CCPA) provides you with additional rights regarding your personal information:</p>
-
-        <h3>11.1 Categories of Personal Information Collected</h3>
-        <p>In the preceding 12 months, we have collected the following categories of personal information:</p>
-        
+        <h2 id="section11">11. Notice to United States Residents</h2>
+        <h3>11.1 California Notice at Collection (CCPA/CPRA)</h3>
+        <p>In the preceding 12 months, we collected the following categories of personal information:</p>
         <table>
             <tr>
                 <th>Category</th>
                 <th>Examples</th>
                 <th>Purpose</th>
+                <th>Disclosure</th>
             </tr>
             <tr>
-                <td>Identifiers</td>
-                <td>Game Player ID, device identifiers, IP address</td>
-                <td>Purchase validation, fraud prevention, analytics</td>
+                <td><strong>Identifiers</strong></td>
+                <td>Game Player ID, device identifiers, OS version</td>
+                <td>Purchase validation, fraud prevention, analytics, security</td>
+                <td>Google (Firebase, GPGS, Play Billing)</td>
             </tr>
             <tr>
-                <td>Commercial Information</td>
-                <td>Purchase records, transaction data</td>
-                <td>Process transactions, customer support</td>
+                <td><strong>Commercial Information</strong></td>
+                <td>Purchase tokens, transaction confirmations</td>
+                <td>Process purchases, prevent fraud, tax compliance</td>
+                <td>Google Play Billing, Legal/Tax advisors (if required)</td>
             </tr>
             <tr>
-                <td>Internet Activity</td>
-                <td>App usage data, crash logs</td>
-                <td>Improve game performance, fix bugs</td>
+                <td><strong>Internet/Network Activity</strong></td>
+                <td>Crash logs, session duration, feature usage</td>
+                <td>Improve stability, fix bugs, optimize gameplay</td>
+                <td>Google Firebase Analytics</td>
+            </tr>
+        </table>
+        <p><strong>No Sale or Sharing:</strong> We do not sell or share your personal information for cross-contextual behavioral advertising or targeted ads. The Game contains no third-party ad networks.</p>
+        <p><strong>Your Rights:</strong> California residents may request access, deletion, correction, and non-discrimination. Contact us at <strong>sk374962610@gmail.com</strong> with subject "CCPA Request".</p>
+
+        <h2 id="section12">12. Notice to EEA/UK/Switzerland Residents</h2>
+        <h3>12.1 Our Role</h3>
+        <p>Kotov Sergei, IE acts as a <strong>data controller</strong> for information processed to provide the Game. Google acts as a data processor/service provider for Firebase and Play Services.</p>
+
+        <h3>12.2 Legal Bases for Processing (GDPR Art. 6)</h3>
+        <table>
+            <tr>
+                <th>Purpose</th>
+                <th>Legal Basis</th>
+            </tr>
+            <tr>
+                <td>Operate Game, validate purchases, provide support</td>
+                <td>Contract performance (Art. 6(1)(b))</td>
+            </tr>
+            <tr>
+                <td>Crash analysis, usage analytics, fraud prevention</td>
+                <td>Legitimate interests (Art. 6(1)(f))</td>
+            </tr>
+            <tr>
+                <td>Tax compliance, legal obligations</td>
+                <td>Legal obligation (Art. 6(1)(c))</td>
             </tr>
         </table>
 
-        <h3>11.2 Your California Privacy Rights</h3>
+        <h3>12.3 Your GDPR Rights</h3>
         <ul>
-            <li><strong>Right to Know:</strong> Request information about the personal information we collect, use, and disclose.</li>
-            <li><strong>Right to Delete:</strong> Request deletion of your personal information.</li>
-            <li><strong>Right to Opt-Out:</strong> Opt-out of the "sale" or "sharing" of personal information.</li>
-            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+            <li>Right to access, rectification, erasure, restriction, portability, and objection</li>
+            <li>Right to lodge a complaint with your national supervisory authority</li>
         </ul>
+        <p>We do not use automated decision-making or profiling that significantly affects you. Transfers outside the EEA rely on SCCs and adequacy decisions. To exercise rights, email <strong>sk374962610@gmail.com</strong>.</p>
 
-        <p>To exercise these rights, contact us at <strong>sk374962610@gmail.com</strong> with the subject line "California Privacy Request".</p>
+        <h2 id="section13">13. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy periodically. The "Last updated" date will reflect changes. For material changes affecting your rights, we will provide notice via the Game (if online) or by updating this page. Continued use constitutes acceptance.</p>
 
-        <h2 id="section12">12. Notice to EEA/UK/Switzerland Residents</h2>
+        <h2 id="section14">14. Contact Us</h2>
+        <p>For questions, requests, or concerns regarding this Privacy Policy:</p>
+        <p>
+            📧 <strong>Email:</strong> sk374962610@gmail.com<br>
+             <strong>Developer:</strong> Kotov Sergei, IE<br>
+            📍 <strong>Location:</strong> Yerevan, Armenia
+        </p>
 
-        <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have additional rights under GDPR:</p>
-
-        <h3>12.1 Legal Basis for Processing</h3>
-        <p>We process your personal information based on:</p>
-        <ul>
-            <li><strong>Contract Performance:</strong> To provide the Game and process purchases (GDPR Art. 6(1)(b))</li>
-            <li><strong>Legitimate Interests:</strong> For analytics, fraud prevention, and game improvement (GDPR Art. 6(1)(f))</li>
-            <li><strong>Legal Obligations:</strong> To comply with applicable laws (GDPR Art. 6(1)(c))</li>
-        </ul>
-
-        <h3>12.2 Your GDPR Rights</h3>
-        <ul>
-            <li>Right to access your personal data</li>
-            <li>Right to rectification of inaccurate data</li>
-            <li>Right to erasure ("right to be forgotten")</li>
-            <li>Right to restrict processing</li>
-            <li>Right to data portability</li>
-            <li>Right to object to processing</li>
-            <li>Right to lodge a complaint with a supervisory authority</li>
-        </ul>
-
-        <p>To exercise these rights, contact us at <strong>sk374962610@gmail.com</strong>.</p>
-
-        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 14px; color: #999;">
-            <p><em>This Privacy Policy is for Sail & Fire: Caribbean, an offline game that uses Google Play Games Services for automatic identification and purchases. No cloud saves, no email collection, no personal data sold. Compliant with GDPR, CCPA, and Google Play requirements.</em></p>
+        <div class="footer">
+            <p>This Privacy Policy is tailored for <strong>Sail & Fire: Caribbean</strong>. It reflects an offline-first design with automatic Google Play Games Services integration, delayed Firebase initialization, and no cloud saves or third-party advertising. Compliant with GDPR, CCPA/CPRA, and Google Play Developer Policies.</p>
         </div>
     </div>
 </body>

@@ -26,16 +26,19 @@
             border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
             margin-bottom: 20px;
+            font-size: 28px;
         }
         h2 {
             color: #667eea;
             margin-top: 30px;
             margin-bottom: 15px;
+            font-size: 22px;
         }
         h3 {
             color: #764ba2;
             margin-top: 20px;
             margin-bottom: 10px;
+            font-size: 18px;
         }
         p, ul, ol { margin-bottom: 15px; }
         li { margin-bottom: 8px; }
@@ -49,6 +52,8 @@
             color: white;
             text-decoration: none;
             border-radius: 6px;
+            font-weight: 500;
+            transition: transform 0.2s;
         }
         .back-button:hover { transform: translateY(-2px); text-decoration: none; }
         .last-updated {
@@ -57,6 +62,7 @@
             border-radius: 4px;
             margin-bottom: 20px;
             font-style: italic;
+            color: #555;
         }
         .badge {
             display: inline-block;
@@ -82,6 +88,17 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        .toc {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        .toc h2 { margin-top: 0; color: #333; font-size: 20px; }
+        .toc ul { margin: 0; list-style: none; padding: 0; }
+        .toc li { margin-bottom: 6px; }
+        .toc a { color: #667eea; font-weight: 500; }
         .footer {
             margin-top: 30px;
             padding-top: 20px;
@@ -99,62 +116,109 @@
     <div class="container">
         <a href="index.html" class="back-button">← Back to Home</a>
         
-        <div class="badge">🎮 Fully Offline Game – No Data Collection</div>
+        <div class="badge">🎮 Fully Offline – No Data Collection</div>
         
         <h1>Privacy Policy for Sail & Fire: Caribbean</h1>
         
         <div class="last-updated">
-            Last updated: May 11, 2026
+            Last updated: May 12, 2026
         </div>
 
-        <p><strong>Kotov Sergei, IE</strong> ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we handle your information when you play our mobile game <strong>Sail & Fire: Caribbean</strong> (the "Game").</p>
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section1">1. Scope</a></li>
+                <li><a href="#section2">2. Information We Collect</a></li>
+                <li><a href="#section3">3. No Account or Sign-In</a></li>
+                <li><a href="#section4">4. No Internet Access</a></li>
+                <li><a href="#section5">5. No Third-Party SDKs</a></li>
+                <li><a href="#section6">6. Your Local Data</a></li>
+                <li><a href="#section7">7. Children's Privacy</a></li>
+                <li><a href="#section8">8. Future Updates</a></li>
+                <li><a href="#section9">9. Changes to This Policy</a></li>
+                <li><a href="#section10">10. Contact Us</a></li>
+            </ul>
+        </div>
+
+        <p><strong>Kotov Sergei, IE</strong> ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we handle information when you play our mobile game <strong>Sail & Fire: Caribbean</strong> (the "Game").</p>
 
         <div class="note-box">
-            <strong>📌 Key points about this Game:</strong><br>
-            • The Game is <strong>fully offline</strong> — no internet connection is required to play.<br>
-            • Your game progress is saved <strong>locally on your device</strong> — there is no cloud save.<br>
-            • The Game does <strong>not</strong> collect, transmit, or share any personal data.<br>
-            • There are <strong>no in-app purchases</strong> in the current version.<br>
-            • There are <strong>no analytics, no crash reporting, no ads</strong> of any kind.
+            <strong>📌 Current Version – Key Facts:</strong><br>
+            • The Game is <strong>fully offline</strong> — no internet connection is required or used.<br>
+            • All progress is saved <strong>locally on your device</strong> — no cloud sync.<br>
+            • The Game does <strong>not collect, transmit, or share any personal data</strong>.<br>
+            • There are <strong>no in-app purchases</strong> in this version.<br>
+            • There are <strong>no analytics, no crash reporting, no ads</strong>, and no third-party SDKs.<br>
+            • No account, login, or Google Play Games Services integration is required.
         </div>
 
-        <h2>1. Information We Collect</h2>
-        <p><strong>The Game collects no information from you or your device.</strong> Period.</p>
+        <p>By downloading, accessing, or playing the Game, you acknowledge the practices described in this Privacy Policy. If you do not agree, please discontinue use.</p>
+
+        <h2 id="section1">1. Scope</h2>
+        <p>This Privacy Policy applies to the current version of Sail & Fire: Caribbean distributed via Google Play. It describes our data practices as of the "Last updated" date above. If future versions add online features, this policy will be updated accordingly.</p>
+
+        <h2 id="section2">2. Information We Collect</h2>
+        <p><strong>The current version of the Game collects no information from you or your device.</strong></p>
         <p>We do not access, collect, store, or transmit:</p>
         <ul>
-            <li>❌ Any personal identifiers (name, email, address, phone number)</li>
-            <li>❌ Device information (model, OS version, identifiers)</li>
-            <li>❌ Location data (GPS or IP address)</li>
-            <li>❌ Contacts, photos, files, or any other data on your device</li>
-            <li>❌ Gameplay analytics, crash logs, or usage statistics</li>
-            <li>❌ Purchase information (there are no purchases)</li>
-            <li>❌ Advertising identifiers (there are no ads)</li>
+            <li>❌ Personal identifiers (name, email, address, phone number, date of birth)</li>
+            <li>❌ Device information (model, OS version, advertising ID, IP address, MAC address)</li>
+            <li>❌ Location data (GPS, Wi-Fi, Bluetooth, or IP-based geolocation)</li>
+            <li>❌ Contacts, photos, files, microphone, camera, or any other device resources</li>
+            <li>❌ Gameplay analytics, session data, crash logs, or usage statistics</li>
+            <li>❌ Purchase or transaction information (no purchases are available)</li>
+            <li>❌ Advertising identifiers or behavioral data (no ads are displayed)</li>
+            <li>❌ Social media data, account credentials, or third-party profile information</li>
         </ul>
 
-        <h2>2. No Account, No Sign-In</h2>
-        <p>The Game does not require or support accounts, logins, or Google Play Games Services. You can play immediately after installation without any registration.</p>
+        <h2 id="section3">3. No Account or Sign-In</h2>
+        <p>The Game does not require or support user accounts, registration, or sign-in via Google Play Games Services or any other platform. You can play immediately after installation without providing any personal information.</p>
 
-        <h2>3. No Internet Access Required</h2>
-        <p>The Game functions completely offline. It never attempts to connect to the internet. You can verify this by checking the Game's network permissions in your device settings.</p>
+        <h2 id="section4">4. No Internet Access</h2>
+        <p>The Game functions completely offline and does not request network permissions. It never attempts to connect to the internet. You can verify this in your device settings under App permissions → Network/Internet access.</p>
 
-        <h2>4. No Third-Party SDKs</h2>
-        <p>The Game contains no third-party software development kits (SDKs) for analytics, advertising, crash reporting, or any other purpose.</p>
+        <h2 id="section5">5. No Third-Party SDKs</h2>
+        <p>The current version of the Game contains no third-party software development kits (SDKs) for analytics, advertising, crash reporting, attribution, or any other purpose. The Game consists solely of our own code and assets.</p>
 
-        <h2>5. Your Local Game Progress</h2>
-        <p>All game data (scores, progress, settings) is stored exclusively on your device. To delete this data:</p>
+        <h2 id="section6">6. Your Local Data</h2>
+        <p>All game data (progress, settings, scores) is stored exclusively on your device in the Game's private storage. This data:</p>
+        <ul>
+            <li>Is not accessible to us or any third party</li>
+            <li>Is not transmitted over any network</li>
+            <li>Is deleted when you uninstall the Game or clear app data</li>
+        </ul>
+        <p><strong>To delete your local game data:</strong></p>
         <ul>
             <li>Uninstall the Game, OR</li>
             <li>Go to device Settings → Apps → Sail & Fire: Caribbean → Storage → Clear Data</li>
         </ul>
 
-        <h2>6. Children's Privacy</h2>
-        <p>The Game does not collect any personal information from anyone, including children under 13. No special accommodations are required because no data collection occurs.</p>
+        <h2 id="section7">7. Children's Privacy</h2>
+        <div class="warning-box">
+            <strong>⚠️ Age Guidance:</strong> The Game is suitable for players aged <strong>16 and older</strong>.
+        </div>
+        <p>Because the Game does not collect any personal information from any user, no special data handling is required for children. However, we encourage parents and guardians to review the Game's content and supervise younger players' device usage.</p>
 
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy in future versions of the Game. If we add features that involve data collection (e.g., in-app purchases, analytics), we will update this policy and notify users via the Game's description in Google Play or an in-app notice.</p>
+        <h2 id="section8">8. Future Updates</h2>
+        <p>We may add online features in future versions of the Game, such as:</p>
+        <ul>
+            <li>In-app purchases via Google Play Billing</li>
+            <li>Optional analytics via Firebase (for crash reporting and usage insights)</li>
+            <li>Google Play Games Services integration (for achievements or cloud saves)</li>
+        </ul>
+        <p>If any such features are added:</p>
+        <ul>
+            <li>This Privacy Policy will be updated before the feature is enabled</li>
+            <li>The "Last updated" date will change</li>
+            <li>We will notify users via the Game's Google Play description or an in-app notice</li>
+            <li>Data collection will only begin after you update to the new version and, where required, provide consent</li>
+        </ul>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy or the Game's data practices:</p>
+        <h2 id="section9">9. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy to reflect changes in the Game's functionality or applicable law. The "Last updated" date at the top of this page will indicate when changes were made. For material changes that affect your privacy rights, we will provide notice via the Game's Google Play description or an in-app notice. Your continued use of the Game after such changes constitutes acceptance of the updated policy.</p>
+
+        <h2 id="section10">10. Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or the Game's data practices, please contact:</p>
         <p>
             📧 <strong>Email:</strong> sk374962610@gmail.com<br>
             🏢 <strong>Developer:</strong> Kotov Sergei, IE<br>
@@ -162,7 +226,7 @@
         </p>
 
         <div class="footer">
-            <p><strong>Sail & Fire: Caribbean</strong> is a fully offline game with no data collection, no internet access, no analytics, no purchases, and no third-party SDKs.</p>
+            <p><strong>Sail & Fire: Caribbean</strong> (current version) is a fully offline game with no data collection, no internet access, no analytics, no purchases, no ads, and no third-party SDKs. This Privacy Policy is compliant with Google Play Developer Policies, GDPR, and CCPA for applications that do not collect personal information.</p>
         </div>
     </div>
 </body>
